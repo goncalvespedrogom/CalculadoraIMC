@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background-color: #001b31f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #1f3b53e7;
+    padding: 2rem;
+    border-radius: 4%;
+    box-shadow: 0 0 1px #000000a9;
+}
+
+/* IMC form */
+#calc-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font: bold;
+    font-weight: 700;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label{
+    margin-bottom: 0.6rem;
+    color: #fffffff6;
+    font-size: 400;
+}
+ 
+.form-control input{  
+    padding: 1rem 0.5rem;
+    opacity: .9;
+}
+
+.form-control input:hover{
+    opacity: 1;
+} 
+
+.action-control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button{  
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: rgb(250, 250, 250);
+    border: none;
+    cursor: pointer;
+    opacity: .9;
+    flex: 1;
+}
+
+button:hover{
+    transition: 0.4s;
+    opacity: 1;
+    background-color: #001b31f3;
+    color: #fff;
+}
+
+/* table */
+#result-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number{
+    font-size: 2.4rem;
+    margin-bottom: -0.2rem;
+    text-transform: uppercase;
+}
+
+#imc-info{
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#result-container h3{
+    margin-top: 1.5rem;
+    color: #dfdfdf;
+}
+
+#imc-table{
+    margin: 1.4rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header{
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table-header,
+.table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3){
+    max-width: 90px;
+}
+
+#back-btn{
+    align-self: center;
+}
+
+.good{
+    color: #00a81c;
+}
+
+.low{
+    color: #f5dd04;
+}
+
+.medium{
+    color: #db6212;
+}
+
+.high{
+    color: #db1912;
+}
+
+@media (max-width: 490px) {
+    .container {
+        background-color: #001b3100;
+        margin: auto;
+        min-width: 0px;
+        min-height: 0px;
+        box-shadow: 0 0 1px #00000000;
+    }
+}
